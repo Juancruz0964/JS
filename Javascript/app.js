@@ -1,10 +1,56 @@
+let nombreUsuario;
+let calificaciones = [];
 
-let nombre = prompt("Por favor, ingrese su nombre completo:");
+
+nombreUsuario = prompt("Por favor, ingrese su nombre completo:");
 alert ("Bienvenido "+ nombre + "!");
 
+for (let i = 0; i < 3; i++) {
+    let nota = parseInt(prompt("Ingrese la calificación " + (i + 1) + ":"));
+    calificaciones.push(nota);
+}
 
 
-let nota1 = parseFloat(prompt("Ingrese su primera nota:"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*let nota1 = parseFloat(prompt("Ingrese su primera nota:"));
 let nota2 = parseFloat(prompt("Ingrese su segunda nota:"));
 let nota3 = parseFloat(prompt("Ingrese su tercera nota:"));
 
@@ -35,3 +81,4 @@ if (notasValidas){
     alert("El alumno " + nombre + " no promocionó la materia")
     }
 }
+/*
