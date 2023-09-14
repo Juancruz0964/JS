@@ -1,0 +1,6 @@
+.custom-button {
+    position: absolute;
+    bottom: 10px; /* Ajusta la distancia desde la parte inferior según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+}

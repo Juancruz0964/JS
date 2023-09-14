@@ -3,12 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promedio alumnos</title>
+    <title>Compra Productos</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
-   
-    
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <a class="navbar-brand">Productos</a>
+            
+            <form class="d-flex ms-auto" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+            
+            <a class="navbar-brand m-3" href="#">
+                <img src="/Images/carrito.png" alt="Carrito de compras" width="30" height="30" class="d-inline-block align-text-top">
+            </a>
+        </div>
+    </nav>
 
-<script src="./Javascript/app.js"></script>
+    <div class="container">
+        <div class="container">
+            <div class="row align-items-stretch">
+                <div class="card col-lg-3 col-md-4 col-sm-6 m-5" style="width: 24rem; min-height: 400px;">
+                    <h5 class="card-title m-3 d-flex align-items-center justify-content-center">Teclado Mecánico HyperX Alloy Origins RGB</h5>
+                    <img src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_37420_Teclado_Mecanico_HyperX_Alloy_Origins_RGB_Switch_Red_LA_b4e1cfe2-grn.jpg" class="card-img-top" alt="Teclado RGB HyperX">
+                    <div class="card-body text-center">
+                        <p class="card-text">Descripción del teclado.</p>
+                        <p class="card-text">$90</p>
+                        <a href="#" class="btn btn-primary btn-add-to-cart" data-product="Teclado Mecánico HyperX Alloy Origins RGB" data-precio="90">Añadir al carrito</a>
+                    </div>
+                </div>
+        
+                <div class="card col-lg-3 col-md-4 col-sm-6 m-5" style="width: 24rem; min-height: 400px;">
+                    <h5 class="card-title m-3 d-flex align-items-center justify-content-center">Silla Gamer Corsair T3</h5>
+                    <img src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_36817_Silla_Gamer_Corsair_T3_Rush_Fabric_Gris_Blanco_7b9b7a14-grn.jpg" class="card-img-top" alt="Silla ergonómica" style="max-height: 300px;">
+                    <div class="card-body text-center">
+                        <p class="card-text">Descripción de la silla.</p>
+                        <p class="card-text">$80</p>
+                        <a href="#" class="btn btn-primary btn-add-to-cart" data-product="Silla Gamer Corsair T3" data-precio="80">Añadir al carrito</a>
+                    </div>
+                </div>
+        
+                <div class="card col-lg-3 col-md-4 col-sm-6 m-5" style="width: 24rem; min-height: 400px;">
+                    <h5 class="card-title m-3 d-flex align-items-center justify-content-center">Gabinete Antec NX292</h5>
+                    <img src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_35714_Gabinete_Antec_NX292_MESH_RGB_Vidrio_Templado_a017a79f-grn.jpg" class="card-img-top" alt="Gabinete RGB" style="max-height: 300px;">
+                    <div class="card-body text-center">
+                        <p class="card-text">Descripción del gabinete.</p>
+                        <p class="card-text">$50</p>
+                        <a href="#" class="btn btn-primary btn-add-to-cart" data-product="Gabinete Antec NX292" data-precio="50">Añadir al carrito</a>
+                    </div>
+                </div>
+        
+                <div class="card col-lg-3 col-md-4 col-sm-6 m-5" style="width: 24rem; min-height: 400px;">
+                    <h5 class="card-title m-3 d-flex align-items-center justify-content-center">Micrófono HyperX Quadcast</h5>
+                    <img src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_37419_Micr__fono_HyperX_QuadCast_Streaming_Condensador_USB_PC-PS4_e372aeaf-grn.jpg" class="card-img-top" alt="Micrófono HyperX" style="max-height: 300px;">
+                    <div class="card-body text-center">
+                        <p class="card-text">Descripción del micrófono.</p>
+                        <p class="card-text">$30</p>
+                        <a href="#" class="btn btn-primary btn-add-to-cart" data-product="Micrófono HyperX Quadcast" data-precio="30">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="productModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Producto Seleccionado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="productModalContent">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir comprando</button>
+                    <button type="button" class="btn btn-primary">Finalizar compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="navbar-brand m-3" href="#">
+        <img src="/Images/carrito.png" alt="Carrito de compras" width="30" height="30" class="d-inline-block align-text-top">
+        <span id="carrito-count">0</span>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="./Javascript/app.js"></script>
 </body>
 </html>
