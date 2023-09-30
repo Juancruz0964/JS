@@ -1,6 +1,12 @@
-.custom-button {
-    position: absolute;
-    bottom: 10px; /* Ajusta la distancia desde la parte inferior según sea necesario */
-    left: 50%;
-    transform: translateX(-50%);
+.custom-card-body {
+    height: 200px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px;
 }
+
+
+body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  }

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nombre": "Teclado Mecánico HyperX Alloy Origins RGB",
+        "precio": 90,
+        "imagen": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_37420_Teclado_Mecanico_HyperX_Alloy_Origins_RGB_Switch_Red_LA_b4e1cfe2-grn.jpg",
+        "descripcion": "Esta es la descripción del Teclado Mecánico HyperX Alloy Origins RGB."
+    },
+    {
+        "id": 2,
+        "nombre": "Silla Gamer Corsair T3",
+        "precio": 80,
+        "imagen": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_36817_Silla_Gamer_Corsair_T3_Rush_Fabric_Gris_Blanco_7b9b7a14-grn.jpg",
+        "descripcion": "Esta es la descripción de la Silla Gamer Corsair T3."
+    },
+    {
+        "id": 3,
+        "nombre": "Gabinete Antec NX292",
+        "precio": 50,
+        "imagen": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_35714_Gabinete_Antec_NX292_MESH_RGB_Vidrio_Templado_a017a79f-grn.jpg",
+        "descripcion": "Esta es la descripción del Gabinete Antec NX292."
+    },
+    {
+        "id": 4,
+        "nombre": "Micrófono HyperX Quadcast",
+        "precio": 30,
+        "imagen": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_37419_Micr__fono_HyperX_QuadCast_Streaming_Condensador_USB_PC-PS4_e372aeaf-grn.jpg",
+        "descripcion": "Esta es la descripción del Micrófono HyperX Quadcast."
+    }
+]
