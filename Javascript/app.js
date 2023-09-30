@@ -89,6 +89,9 @@ function eliminarDelCarrito(nombre) {
         // Actualizar el contador del carrito en el frontend
         carritoCount.innerText = carrito.reduce((total, item) => total + item.cantidad, 0);
 
+        // Guardar los datos actualizados del carrito en localStorage
+        localStorage.setItem('carrito', JSON.stringify(carrito));
+
         // Mostrar el carrito actualizado en el modal
         mostrarModal();
     }
